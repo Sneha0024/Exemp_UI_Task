@@ -1,0 +1,88 @@
+h1 {
+  color: red;
+}
+header {
+  .header-nav {
+    background: black;
+    height: 84px;
+    .custom_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1250px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      .logo {
+        width: 180px;
+        cursor: pointer;
+        img {
+          width: 100%;
+        }
+      }
+      .nav-items {
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        .nav-bar > ul {
+          display: flex;
+          gap: 25px;
+          margin: 0;
+          padding: 0;
+          align-items: baseline;
+          list-style: none;
+          li {
+            list-style: none;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            position: relative;
+            white-space: pre-wrap;
+            max-width: 110px;
+            padding: 0 21px;
+            text-align: center;
+            &::after {
+              content: "";
+              content: "";
+              height: 37px;
+              width: 0.3px;
+              background: white;
+              position: absolute;
+              top: 22px;
+              left: -9px;
+            }
+            &:first-child {
+              &::after {
+                display: none;
+              }
+            }
+            a {
+              color: #ffffff;
+              font-size: 14px;
+              font-weight: 500;
+              text-decoration: none;
+              text-transform: uppercase;
+            }
+            svg {
+              width: 25px;
+            }
+          }
+          .mega-menu {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 85px;
+            background-color: #fff;
+            border-radius: 0 0 30px 30px;
+            padding: 70px 90px 58px 90px;
+            box-shadow: 0px 5px 10px #b8b8b8;
+            border: 25px solid red;
+          }
+        }
+      }
+    }
+  }
+}
