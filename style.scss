@@ -3,8 +3,8 @@ h1 {
 }
 header {
   .header-nav {
-    background: black;
-    height: 84px;
+    background: #001487;
+    height: 108px;
     .custom_container {
       display: flex;
       align-items: center;
@@ -15,7 +15,7 @@ header {
       padding-left: 15px;
       margin-right: auto;
       margin-left: auto;
-
+      height: 100%;
       .logo {
         width: 180px;
         cursor: pointer;
@@ -34,6 +34,9 @@ header {
           padding: 0;
           align-items: baseline;
           list-style: none;
+          @media only screen and (max-width: 767px){
+            flex-direction: column;
+          }
           li {
             list-style: none;
             flex-direction: column;
@@ -41,18 +44,18 @@ header {
             align-items: center;
             position: relative;
             white-space: pre-wrap;
-            max-width: 110px;
+            max-width: 115px;
             padding: 0 21px;
             text-align: center;
             &::after {
               content: "";
               content: "";
-              height: 37px;
+              height: 30px;
               width: 0.3px;
-              background: white;
+              background: #293bb2;
               position: absolute;
               top: 22px;
-              left: -9px;
+              left: -15px;
             }
             &:first-child {
               &::after {
@@ -62,27 +65,194 @@ header {
             a {
               color: #ffffff;
               font-size: 14px;
-              font-weight: 500;
+              font-weight: 600;
               text-decoration: none;
               text-transform: uppercase;
+              letter-spacing: 0.5px;
             }
             svg {
-              width: 25px;
+              width: 30px;
+              margin-bottom: 5px;
+            }
+            &.active-menu {
+              position: relative;
+              a {
+                color: #65c3ed;
+              }
+              .arrow-up {
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                top: 100px;
+                z-index: 1;
+                border-bottom: 20px solid #fff;
+                @media only screen and (max-width: 767px){
+                  display: none;
+                }
+              }
+            }
+          }
+          .sub-nav {
+            cursor: pointer;
+            &:hover {
+              .mega-menu {
+                display: block;
+              }
             }
           }
           .mega-menu {
+            display: none;
             position: absolute;
             left: 0;
             right: 0;
-            top: 85px;
+            top: 108px;
             background-color: #fff;
             border-radius: 0 0 30px 30px;
-            padding: 70px 90px 58px 90px;
+            padding: 0px 90px 58px 90px;
             box-shadow: 0px 5px 10px #b8b8b8;
-            border: 25px solid red;
+            border-top: 25px solid #f58c73;
+            border-bottom: 25px solid #f58c73;
+            border-right: 40px solid #f58c73;
+            border-left: 40px solid #f58c73;
+            .mega-menu-item {
+              justify-content: end;
+              color: black;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              height: 100%;
+              margin-bottom: 45px;
+              img {
+                width: 200px;
+              }
+              .item-title {
+                font-weight: 700;
+                font-size: 20px;
+                text-transform: uppercase;
+                margin: 20px 0 5px;
+                color: #08198b;
+              }
+              .item-desc {
+                text-align: center;
+                color: #001487;
+              }
+            }
           }
+        }
+      }
+      .header-last-items {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        .social-links {
+          background-color: #fff;
+          border-radius: 0px 0px 25px 25px;
+          padding: 8px 15px;
+          margin-top: -15px;
+          i {
+            padding: 0 10px;
+            color: #001487;
+          }
+        }
+        .search {
+          background: #f58c73;
+          height: 35px;
+          width: 35px;
+          text-align: center;
+          margin-top: 11px;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
         }
       }
     }
   }
+}
+body {
+  min-height: 108vh;
+}
+@media only screen and (max-width: 767px) {
+  header .header-nav .nav-items .nav-bar {
+    right: auto;
+    left: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header .header-nav .nav-items .nav-bar {
+    background: #001487;
+    position: fixed;
+    right: -431px;
+    top: 128px;
+    bottom: 0;
+    width: 430px;
+    transition: 0.3s ease all;
+    z-index: 3000;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header .header-nav .nav-items .nav-bar > ul {
+    display: block;
+    padding: 32px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  header .header-nav .nav-items .nav-bar > ul {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header.active-responsive-nav .header-nav .nav-bar {
+    left: 0;
+  }
+}
+header.active-responsive-nav .header-nav .nav-bar {
+  right: 0;
+}
+@media only screen and (max-width: 1024px) {
+  header .header-nav .nav-items .nav-bar > ul > li.sub-nav {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header .header-nav .nav-items .nav-bar > ul > li {
+    display: block;
+    height: auto;
+    margin-bottom: 19px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header .header-nav .custom_container {
+    max-width: fit-content;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .custom_container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  header .header-nav .custom_container .header-last-items {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px){
+header.white .header-nav {
+    height: 56px;
+}
+}
+header.active-responsive-nav .header-nav {
+    height: 40px;
+}
+@media screen and (max-width: 767px) {
+  header .header-nav .custom_container .logo {
+    width: 91px;
+    cursor: pointer;
+}
 }
