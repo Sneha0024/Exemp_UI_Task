@@ -6,7 +6,7 @@ header .header-nav {
   background: #001487;
   height: 108px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   header .header-nav {
     height: auto;
   }
@@ -30,7 +30,7 @@ header .header-nav .custom_container {
     margin: 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   header .header-nav .custom_container {
     padding-right: 20px;
     padding-left: 20px;
@@ -40,7 +40,7 @@ header .header-nav .custom_container .logo {
   width: 180px;
   cursor: pointer;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   header .header-nav .custom_container .logo {
     width: 130px;
   }
@@ -56,7 +56,7 @@ header .header-nav .custom_container .nav-items {
 header .header-nav .custom_container .nav-items .nav-bar .social-links {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   header .header-nav .custom_container .nav-items .nav-bar .social-links {
     display: flex;
     justify-content: space-between;
@@ -76,7 +76,7 @@ header .header-nav .custom_container .nav-items .nav-bar .social-links {
     z-index: 3000;
     width: 100%;
     height: fit-content;
-    right: -390px;
+    right: -1500px;
   }
 }
 header .header-nav .custom_container .nav-items .nav-bar > ul {
@@ -87,7 +87,7 @@ header .header-nav .custom_container .nav-items .nav-bar > ul {
   align-items: baseline;
   list-style: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   header .header-nav .custom_container .nav-items .nav-bar > ul {
     flex-direction: column;
   }
@@ -148,7 +148,7 @@ header .header-nav .custom_container .nav-items .nav-bar > ul li svg {
   width: 30px;
   margin-bottom: 5px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   header .header-nav .custom_container .nav-items .nav-bar > ul li svg {
     margin-bottom: 0;
     margin-right: 15px;
@@ -160,7 +160,7 @@ header .header-nav .custom_container .nav-items .nav-bar > ul li.active-menu {
 header .header-nav .custom_container .nav-items .nav-bar > ul li.active-menu a {
   color: #65c3ed;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   header .header-nav .custom_container .nav-items .nav-bar > ul li.active-menu a {
     color: #fff;
   }
@@ -175,7 +175,7 @@ header .header-nav .custom_container .nav-items .nav-bar > ul li.active-menu .ar
   z-index: 1;
   border-bottom: 20px solid #fff;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   header .header-nav .custom_container .nav-items .nav-bar > ul li.active-menu .arrow-up {
     display: none;
   }
@@ -191,7 +191,7 @@ header .header-nav .custom_container .nav-items .nav-bar > ul .sub-nav {
 header .header-nav .custom_container .nav-items .nav-bar > ul .sub-nav:hover .mega-menu {
   display: block;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   header .header-nav .custom_container .nav-items .nav-bar > ul .sub-nav:hover .mega-menu {
     display: none;
   }
@@ -199,7 +199,7 @@ header .header-nav .custom_container .nav-items .nav-bar > ul .sub-nav:hover .me
 header .header-nav .custom_container .nav-items .nav-bar > ul .sub-nav .mob-nav-down-arrow {
   display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   header .header-nav .custom_container .nav-items .nav-bar > ul .sub-nav .mob-nav-down-arrow {
     display: inline-block;
     color: #fff;
@@ -282,7 +282,7 @@ header .header-nav .custom_container .header-last-items .social-links {
   padding: 8px 15px;
   margin-top: -15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   header .header-nav .custom_container .header-last-items .social-links {
     display: none;
   }
@@ -311,7 +311,7 @@ header .header-nav .custom_container .header-last-items .search {
 header .header-nav .custom_container .header-last-items .mob-last .cross-icon {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   header .header-nav .custom_container .header-last-items .mob-last {
     display: flex;
     align-items: center;

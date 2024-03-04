@@ -5,7 +5,7 @@ header {
   .header-nav {
     background: #001487;
     height: 108px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1024px) {
       height: auto;
     }
     .custom_container {
@@ -24,14 +24,14 @@ header {
         justify-content: space-between;
         margin: 0;
       }
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 1024px) {
         padding-right: 20px;
         padding-left: 20px;
       }
       .logo {
         width: 180px;
         cursor: pointer;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1024px) {
           width: 130px;
         }
 
@@ -46,7 +46,7 @@ header {
         .nav-bar {
           .social-links {
             display: none;
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 1024px) {
               display: flex;
               justify-content: space-between;
               padding: 20px 25px;
@@ -64,7 +64,7 @@ header {
             z-index: 3000;
             width: 100%;
             height: fit-content;
-            right: -390px;
+            right: -1500px;
           }
         }
         .nav-bar > ul {
@@ -74,7 +74,7 @@ header {
           padding: 0;
           align-items: baseline;
           list-style: none;
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1024px) {
             flex-direction: column;
           }
           @media only screen and (max-width: 1024px) {
@@ -129,7 +129,7 @@ header {
             svg {
               width: 30px;
               margin-bottom: 5px;
-              @media only screen and (max-width: 767px) {
+              @media only screen and (max-width: 1024px) {
                 margin-bottom: 0;
                 margin-right: 15px;
               }
@@ -138,7 +138,7 @@ header {
               position: relative;
               a {
                 color: #65c3ed;
-                @media only screen and (max-width: 767px) {
+                @media only screen and (max-width: 1024px) {
                   color: #fff;
                 }
               }
@@ -151,7 +151,7 @@ header {
                 top: 100px;
                 z-index: 1;
                 border-bottom: 20px solid #fff;
-                @media only screen and (max-width: 767px) {
+                @media only screen and (max-width: 1024px) {
                   display: none;
                 }
               }
@@ -167,14 +167,14 @@ header {
 
               .mega-menu {
                 display: block;
-                @media only screen and (max-width: 767px){
+                @media only screen and (max-width: 1024px){
                   display: none;
                 }
               }
             }
             .mob-nav-down-arrow {
               display: none;
-              @media only screen and (max-width: 767px) {
+              @media only screen and (max-width: 1024px) {
                 display: inline-block;
                 color: #fff;
                 right: 19px;
@@ -259,7 +259,7 @@ header {
           border-radius: 0px 0px 25px 25px;
           padding: 8px 15px;
           margin-top: -15px;
-          @media screen and (max-width: 767px) {
+          @media screen and (max-width: 1024px) {
             display: none;
           }
 
@@ -287,7 +287,7 @@ header {
           .cross-icon {
             display: none;
           }
-          @media screen and (max-width: 767px) {
+          @media screen and (max-width: 1024px) {
             display: flex;
             align-items: center;
             .cross-icon {
